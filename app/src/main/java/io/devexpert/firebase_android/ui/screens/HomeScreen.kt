@@ -6,7 +6,11 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -36,13 +40,24 @@ fun HomeScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Icon(
+            imageVector = Icons.Default.AccountCircle,
+            contentDescription = "Avatar de usuario",
+            modifier = Modifier.size(96.dp),
+            tint = MaterialTheme.colorScheme.primary
+        )
+        Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = "Bienvenido a Home",
             style = MaterialTheme.typography.headlineMedium
         )
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = if (user?.isAnonymous == true) "Sesión: Invitado (${user.uid.take(6)}...)" else "Usuario: ${user?.email ?: "Desconocido"}"
+            text = if (user?.isAnonymous == true) {
+                "Sesión: Invitado (${user.uid.take(6)}...)"
+            } else {
+                "Correo: ${user?.email ?: "Sin correo"}"
+            }
         )
         Spacer(modifier = Modifier.height(24.dp))
         Button(

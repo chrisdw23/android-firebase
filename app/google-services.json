@@ -1,13 +1,32 @@
-{
+﻿{
   "project_info": {
-    "project_number": "505678912396",
-    "project_id": "fir-android-14210",
-    "storage_bucket": "fir-android-14210.firebasestorage.app"
+    "project_number": "939499959364",
+    "project_id": "androidfirebase-5cb64",
+    "storage_bucket": "androidfirebase-5cb64.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:505678912396:android:8c1da645e1b3beec97d4a9",
+        "mobilesdk_app_id": "1:939499959364:android:c5f05af1bf53558d53b811",
+        "android_client_info": {
+          "package_name": "com.franlop.android_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUmIPQxS_wS9XToewI1xc3lnNZ4VWitxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939499959364:android:2bc425dbd0eeafbc53b811",
         "android_client_info": {
           "package_name": "io.devexpert.firebase_android"
         }
@@ -15,7 +34,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBHe3BKDx1mSpRnrp3MTeuQprhRfvM7y98"
+          "current_key": "AIzaSyDUmIPQxS_wS9XToewI1xc3lnNZ4VWitxQ"
         }
       ],
       "services": {
