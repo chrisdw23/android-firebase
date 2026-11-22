@@ -57,6 +57,15 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("androidx.navigation:navigation-compose:2.8.9")
 
+    // Credential Manager + Google Identity
+    implementation("androidx.credentials:credentials:1.5.0")
+    implementation("androidx.credentials:credentials-play-services-auth:1.5.0")
+    implementation("com.google.android.libraries.identity.googleid:googleid:1.1.1")
+
+    // Coil para cargar la foto de perfil en Compose
+    implementation("io.coil-kt.coil3:coil-compose:3.1.0")
+    implementation("io.coil-kt.coil3:coil-network-okhttp:3.1.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -1,4 +1,4 @@
-﻿{
+{
   "project_info": {
     "project_number": "939499959364",
     "project_id": "androidfirebase-5cb64",
@@ -12,7 +12,12 @@
           "package_name": "com.franlop.android_firebase"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "939499959364-1m27ltjodpn1jlghom5i62820rbrqfnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDUmIPQxS_wS9XToewI1xc3lnNZ4VWitxQ"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939499959364-1m27ltjodpn1jlghom5i62820rbrqfnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     },
@@ -31,7 +41,20 @@
           "package_name": "io.devexpert.firebase_android"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "939499959364-cfn5nnrlnj6uhrh7v6fn4vqpghjn8glc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.devexpert.firebase_android",
+            "certificate_hash": "a40610048481477d3424227ad8b1cbfb4ea4849a"
+          }
+        },
+        {
+          "client_id": "939499959364-1m27ltjodpn1jlghom5i62820rbrqfnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDUmIPQxS_wS9XToewI1xc3lnNZ4VWitxQ"
@@ -39,7 +62,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939499959364-1m27ltjodpn1jlghom5i62820rbrqfnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

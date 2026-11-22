@@ -114,6 +114,28 @@ fun LoginScreen(
         OutlinedButton(
             onClick = {
                 scope.launch {
+                    when (val result = auth.signInWithGoogle(context)) {
+                        is AuthRes.Success -> {
+                            analytics.logEvent("login_google_exitoso")
+                            onNavigateToHome()
+                        }
+                        is AuthRes.Error -> {
+                            analytics.logError(result.errorMessage)
+                            Toast.makeText(context, result.errorMessage, Toast.LENGTH_LONG).show()
+                        }
+                    }
+                }
+            },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(text = "Continuar con Google")
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        OutlinedButton(
+            onClick = {
+                scope.launch {
                     when (val result = auth.signInAnonymously()) {
                         is AuthRes.Success -> {
                             analytics.logEvent("login_anonimo_exitoso")
